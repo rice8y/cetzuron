@@ -36,7 +36,7 @@ Package cetzuron version 0.1.0 has been installed to /home/rice8/.local/share/ty
   caption: [ラベル表示 Ver.]
 )
 #figure(
-  fcnn(3, 4, 3, middleLayers: 1, label: false),
+  fcnn(5, 4, 3, middleLayers: 1, label: false),
   caption: [ラベル非表示 Ver.]
 )
 ```
