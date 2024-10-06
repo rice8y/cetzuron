@@ -1,0 +1,7 @@
+[package]
+name = "cetzuron"
+version = "0.1.0"
+entrypoint = "src/lib.typ"
+authors = ["Eito YONEYAMA"]
+license = "MIT"
+description = "A Typst package for drawing neural network diagrams."
