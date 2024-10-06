@@ -6,6 +6,7 @@
 
 ```bash
 $ git colne https://github.com/rice8y/cetzuron.git
+$ cd cetzuron
 ```
 
 2. ローカルにパッケージをインストールする.
