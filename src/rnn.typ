@@ -22,8 +22,8 @@
     for i in range(1, middleLayers+1) {
       for j in range(1, middleNodes+1) {
         circle((3 * i, middleTop - 1.5 * (j + 1)), radius: r)
-        arc((3 * i + 0.25, middleTop - 1.5 * j - 1.02), start: -10deg, stop: 190deg, radius: (0.25), mark: (end: ">"))
-          // \draw (3*\i, \middleTop-1.5*\j-1) pic[black, -latex]{carc=-10:190:0.25};
+        // arrows
+        arc((3 * i + 0.25, middleTop - 1.5 * j - 1.02), start: -10deg, stop: 190deg, radius: (0.25), mark: (end: ">", fill: black))
       }
     }
     // output
