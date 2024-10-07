@@ -43,9 +43,9 @@ fcnn(
 ```
 
 **inputNodes:** 入力層のノード数  
-**middleNodes:** 中間層のノード数  
+**middleNodes:** 隠れ層のノード数  
 **outputNodes:** 出力層のノード数  
-**middleLayers:** 中間層の層数 (default: 3)  
+**middleLayers:** 隠れ層の層数 (default: 3)  
 **label:** ラベルの有無 (default: true)
 
 #### `#fcnn` の使用例
@@ -83,9 +83,9 @@ rnn(
 ```
 
 **inputNodes:** 入力層のノード数  
-**middleNodes:** 中間層のノード数  
+**middleNodes:** 隠れ層のノード数  
 **outputNodes:** 出力層のノード数  
-**middleLayers:** 中間層の層数 (default: 3)  
+**middleLayers:** 隠れ層の層数 (default: 3)  
 **label:** ラベルの有無 (default: true)
 
 #### `#rnn` の使用例
@@ -113,7 +113,7 @@ rnn(
 #### Parameters
 
 ```typ
-rnn(
+lstm(
     inputNodes: int, 
     middleNodes: int, 
     outputNodes: int, 
@@ -123,9 +123,9 @@ rnn(
 ```
 
 **inputNodes:** 入力層のノード数  
-**middleNodes:** 中間層のノード数  
+**middleNodes:** 隠れ層のノード数  
 **outputNodes:** 出力層のノード数  
-**middleLayers:** 中間層の層数 (default: 3)  
+**middleLayers:** 隠れ層の層数 (default: 3)  
 **label:** ラベルの有無 (default: true)
 
 #### `#lstm` の使用例
@@ -147,3 +147,45 @@ rnn(
 ```
 
 ![sample](./docs/lstm/sample_lstm.png)
+
+### オートエンコーダ `#ae`
+
+#### Parameters
+
+```typ
+rnn(
+    inputNodes: int, 
+    middleNodes: int, 
+    style: string,
+    label: bool,
+) -> content
+```
+
+**inputNodes:** 入力層/出力層のノード数  
+**middleNodes:** 隠れ層のノード数  
+**style:** 隠れ層の形状 \["short", "full"\] (default: "short")  
+**label:** ラベルの有無 (default: true)
+
+#### `#ae` の使用例
+
+```typ
+#import "@local/cetzuron:0.1.0": *
+#set page(width: auto, height: auto)
+#set text(lang: "ja", font: "TeX Gyre Termes", size: 10pt)
+#show regex("[\p{scx:Han}\p{scx:Hira}\p{scx:Kana}]"): set text(lang: "ja", font: "Harano Aji Mincho", size: 10pt)
+
+#figure(
+  ae(5, 3),
+  caption: [ラベル表示 Ver. (short)]
+)
+#figure(
+  ae(5, 3, style: "full"),
+  caption: [ラベル表示 Ver. (full)]
+)
+#figure(
+  ae(4, 2, style: "full", label: false),
+  caption: [ラベル非表示 Ver. (full)]
+)
+```
+
+![sample](./docs/ae/sample_ae.png)
