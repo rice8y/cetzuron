@@ -9,7 +9,7 @@ $ git colne https://github.com/rice8y/cetzuron.git
 $ cd cetzuron
 ```
 
-### 2. `justfile` か `sh`, `bat` でローカルにパッケージをインストールする.
+### 2. `justfile` か `.sh`, `.bat` でローカルにパッケージをインストールする.
 
 #### 2-1. `justfile` の場合
 
@@ -27,7 +27,7 @@ Package cetzuron version 0.1.0 has been installed to /home/rice8/.local/share/ty
 
 </details>
 
-#### 2-2. `sh` の場合
+#### 2-2. `.sh` の場合
 
 ```bash
 $ chmod +x install.sh
@@ -44,7 +44,7 @@ Package cetzuron version 0.1.0 has been installed to /home/rice8/.local/share/ty
 
 </details>
 
-#### 2-3. `bat` の場合
+#### 2-3. `.bat` の場合
 
 ```cmd
 > install.bat
