@@ -18,7 +18,7 @@ $ just install
 ```
 
 <details>
-<summary>WSL2 での実行例</summary>
+<summary>WSL2 (Ubuntu) での実行例</summary>
 
 ```bash
 $ just install
@@ -35,7 +35,7 @@ $ ./install.sh
 ```
 
 <details>
-<summary>WSL2 での実行例</summary>
+<summary>Windows (GitBash) での実行例</summary>
 
 ```bash
 $ ./install.sh
@@ -51,7 +51,7 @@ Package cetzuron version 0.1.0 has been installed to /home/rice8/.local/share/ty
 ```
 
 <details>
-<summary>WSL2 での実行例</summary>
+<summary>Windows (cmd) での実行例</summary>
 
 ```bash
 > install.bat
