@@ -22,6 +22,7 @@ $ just install
 $ just install
 Package cetzuron version 0.1.0 has been installed to /home/rice8/.local/share/typst/packages/local/cetzuron/0.1.0
 ```
+</details>
 
 
 ```bash
