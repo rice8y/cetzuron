@@ -53,13 +53,13 @@
 
     //// labels
     if label {
-      content((0, inputTop + margin), [Input Layer])
+      content((0, inputTop + margin), text[Input Layer])
       if middleLayers==1 {
-        content((3 * middleLayers / 2 + 1.5, middleTop + margin), [Hidden Layer])
+        content((3 * middleLayers / 2 + 1.5, middleTop + margin), text[Hidden Layer])
       } else {
-        content((3 * middleLayers / 2 + 1.5, middleTop + margin), [Hidden Layers (#middleLayers dim)])
+        content((3 * middleLayers / 2 + 1.5, middleTop + margin), text[Hidden Layers (#middleLayers dim)])
       }
-      content((3 * middleLayers + 3, outputTop + margin), [Output Layer])
+      content((3 * middleLayers + 3, outputTop + margin), text[Output Layer])
     }
   })
 }

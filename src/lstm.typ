@@ -2,7 +2,7 @@
 
 #import "requirements.typ": *
 
-#let rnn(inputNodes, middleNodes, outputNodes, middleLayers: 3, label: true) = {
+#let lstm(inputNodes, middleNodes, outputNodes, middleLayers: 3, label: true) = {
   let inputTop = 3/4 * (inputNodes - 1)
   let middleTop = 3/4 * (middleNodes - 1)
   let outputTop = 3/4 * (outputNodes - 1)
@@ -22,8 +22,10 @@
     for i in range(1, middleLayers+1) {
       for j in range(1, middleNodes+1) {
         circle((3 * i, middleTop - 1.5 * (j + 1)), radius: r)
-        // arrows
+        // arrow
         arc((3 * i + 0.25, middleTop - 1.5 * j - 1.02), start: -10deg, stop: 190deg, radius: (0.25), mark: (end: ">", fill: black))
+        // text
+        content((3 * i, middleTop - 1.5 * (j + 1)), text(size: 8pt)[LSTM])
       }
     }
     // output
