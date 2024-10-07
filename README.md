@@ -20,8 +20,6 @@ $ just install
 <details>
 <summary>WSL2 での実行例</summary>
 
-2-2. `bash` の場合
-
 ```bash
 $ just install
 Package cetzuron version 0.1.0 has been installed to /home/rice8/.local/share/typst/packages/local/cetzuron/0.1.0
@@ -29,6 +27,7 @@ Package cetzuron version 0.1.0 has been installed to /home/rice8/.local/share/ty
 
 </details>
 
+2-2. `bash` の場合
 
 ```bash
 $ chmod +x init.sh
