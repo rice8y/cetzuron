@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if ! command -v typst &> /dev/null; then
+  echo "Error: Typst is not installed. Please install it before running this script."
+  exit 1
+fi
+
 TOML_FILE="typst.toml"
 
 get_value_from_toml() {

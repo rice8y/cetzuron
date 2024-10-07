@@ -17,6 +17,10 @@ get_local_package_dir:
 
 install:
   #!/bin/bash
+  if ! command -v typst &> /dev/null; then
+    echo "Error: Typst is not installed. Please install it before running this recipe."
+    exit 1
+  fi
   PACKAGE_NAME=$(just get_value_from_toml name)
   PACKAGE_VERSION=$(just get_value_from_toml version)
   LOCAL_PACKAGE_DIR=$(just get_local_package_dir)
@@ -27,6 +31,10 @@ install:
 
 clean:
   #!/bin/bash
+  if ! command -v typst &> /dev/null; then
+    echo "Error: Typst is not installed. Please install it before running this recipe."
+    exit 1
+  fi
   PACKAGE_NAME=$(just get_value_from_toml name)
   PACKAGE_VERSION=$(just get_value_from_toml version)
   LOCAL_PACKAGE_DIR=$(just get_local_package_dir)

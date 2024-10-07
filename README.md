@@ -9,7 +9,7 @@ $ git colne https://github.com/rice8y/cetzuron.git
 $ cd cetzuron
 ```
 
-2. `justfile` か `shell` でローカルにパッケージをインストールする.
+2. `justfile` か `sh`, `bat` でローカルにパッケージをインストールする.
 
 2-1. `justfile` の場合
 
@@ -27,19 +27,59 @@ Package cetzuron version 0.1.0 has been installed to /home/rice8/.local/share/ty
 
 </details>
 
-2-2. `bash` の場合
+2-2. `sh` の場合
 
 ```bash
-$ chmod +x init.sh
-$ ./init.sh
+$ chmod +x install.sh
+$ ./install.sh
 ```
 
 <details>
 <summary>WSL2 での実行例</summary>
 
 ```bash
-$ ./init.sh
+$ ./install.sh
 Package cetzuron version 0.1.0 has been installed to /home/rice8/.local/share/typst/packages/local/cetzuron/0.1.0
+```
+
+</details>
+
+2-3. `bat` の場合
+
+```cmd
+> install.bat
+```
+
+<details>
+<summary>WSL2 での実行例</summary>
+
+```bash
+> install.bat
+C:install.sh
+C:justfile
+C:README.md
+C:typst.toml
+C:docs\ae\sample_ae.pdf
+C:docs\ae\sample_ae.png
+C:docs\ae\sample_ae.typ
+C:docs\fcnn\sample_fcnn.pdf
+C:docs\fcnn\sample_fcnn.png
+C:docs\fcnn\sample_fcnn.typ
+C:docs\lstm\sample_lstm.pdf
+C:docs\lstm\sample_lstm.png
+C:docs\lstm\sample_lstm.typ
+C:docs\rnn\sample_rnn.pdf
+C:docs\rnn\sample_rnn.png
+C:docs\rnn\sample_rnn.typ
+C:src\ae.typ
+C:src\fcnn.typ
+C:src\lib.typ
+C:src\lstm.typ
+C:src\requirements.typ
+C:src\rnn.typ
+23 File(s) copied
+Package cetzuron version 0.1.0 has been installed to C:\Users\yoneyama\AppData\Roaming\typst\packages\local\cetzuron\0.1.0 
+
 ```
 
 </details>
