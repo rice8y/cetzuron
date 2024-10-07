@@ -35,7 +35,7 @@ $ ./install.sh
 ```
 
 <details>
-<summary>Windows (GitBash) での実行例</summary>
+<summary>Windows (Git Bash) での実行例</summary>
 
 ```bash
 $ ./install.sh
