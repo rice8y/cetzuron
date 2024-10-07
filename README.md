@@ -153,7 +153,7 @@ lstm(
 #### Parameters
 
 ```typ
-rnn(
+ae(
     inputNodes: int, 
     middleNodes: int, 
     style: string,
