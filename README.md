@@ -1,6 +1,6 @@
 # ニューラルネットワーク描画パッケージ (CeTZ)
 
-## Install
+## Installation
 
 1. `git clone` する.
 
