@@ -9,7 +9,20 @@ $ git colne https://github.com/rice8y/cetzuron.git
 $ cd cetzuron
 ```
 
-2. ローカルにパッケージをインストールする.
+2. `justfile` か `shell` でローカルにパッケージをインストールする.
+
+```bash
+$ just install
+```
+
+<details>
+<summary>WSL2 での実行例</summary>
+
+```bash
+$ just install
+Package cetzuron version 0.1.0 has been installed to /home/rice8/.local/share/typst/packages/local/cetzuron/0.1.0
+```
+
 
 ```bash
 $ chmod +x init.sh
