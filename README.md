@@ -2,14 +2,14 @@
 
 ## Installation
 
-### 1. `git clone` する.
+### 1. `git clone` する
 
 ```bash
-$ git colne https://github.com/rice8y/cetzuron.git
+$ git clone https://github.com/rice8y/cetzuron.git
 $ cd cetzuron
 ```
 
-### 2. `justfile` か `.sh`, `.bat` でローカルにパッケージをインストールする.
+### 2. `justfile` か `.sh`, `.bat` でローカルにパッケージをインストールする
 
 #### 2-1. `justfile` の場合
 
@@ -35,7 +35,7 @@ $ ./install.sh
 ```
 
 <details>
-<summary>Windows (Git Bash) での実行例</summary>
+<summary>WSL2 (Ubuntu) での実行例</summary>
 
 ```bash
 $ ./install.sh
