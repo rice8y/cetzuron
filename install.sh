@@ -9,7 +9,7 @@ TOML_FILE="typst.toml"
 
 get_value_from_toml() {
   local key="$1"
-  grep "$key" "$TOML_FILE" | sed -E 's/.*= "(.*)"/\1/'
+  grep "$key" "$TOML_FILE" | sed -E 's/.*= "(.*)"/\1/' | tr -d '\r'
 }
 
 get_local_package_dir() {
