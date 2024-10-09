@@ -86,6 +86,12 @@ Package cetzuron version 0.1.0 has been installed to C:\Users\yoneyama\AppData\R
 
 ## Usage
 
+`#import` でパッケージを読み込む.
+
+```typ
+#import "@local/cetzuron:0.1.0"
+```
+
 ### 1. 全結合型ニューラルネットワーク `#fcnn`
 
 #### Parameters
