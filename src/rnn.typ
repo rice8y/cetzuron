@@ -1,7 +1,5 @@
 #import "requirements.typ": *
 
-#import "requirements.typ": *
-
 #let rnn(inputNodes, middleNodes, outputNodes, middleLayers: 3, label: true) = {
   let inputTop = 3/4 * (inputNodes - 1)
   let middleTop = 3/4 * (middleNodes - 1)
