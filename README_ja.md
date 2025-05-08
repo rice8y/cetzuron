@@ -94,7 +94,7 @@ Package cetzuron version 0.1.0 has been installed to C:\Users\yoneyama\AppData\R
 #import "@local/cetzuron:0.1.0"
 ```
 
-### 1. 全結合型ニューラルネットワーク `#fcnn`
+### 全結合型ニューラルネットワーク `#fcnn`
 
 #### Parameters
 
@@ -134,7 +134,7 @@ fcnn(
 
 ![sample](./docs/fcnn/sample_fcnn.png)
 
-### 2. 再帰型ニューラルネットワーク `#rnn`
+### 再帰型ニューラルネットワーク `#rnn`
 
 #### Parameters
 

@@ -93,7 +93,7 @@ Import the package using `#import`.
 #import "@local/cetzuron:0.1.0"
 ```
 
-### 1. Fully Connected Neural Network `#fcnn`
+### Fully Connected Neural Network `#fcnn`
 
 #### Parameters
 
@@ -131,7 +131,9 @@ fcnn(
 )
 ```
 
-### 2. Recurrent Neural Network `#rnn`
+![sample](./docs/fcnn/sample_fcnn.png)
+
+### Recurrent Neural Network `#rnn`
 
 #### Parameters
 
@@ -168,6 +170,8 @@ rnn(
   caption: [Without Labels]
 )
 ```
+
+![sample](./docs/rnn/sample_rnn.png)
 
 ### Long Short-Term Memory `#lstm`
 
@@ -206,6 +210,8 @@ lstm(
   caption: [Without Labels]
 )
 ```
+
+![sample](./docs/lstm/sample_lstm.png)
 
 ### Autoencoder `#ae`
 
@@ -246,3 +252,5 @@ ae(
   caption: [Without Labels (full)]
 )
 ```
+
+![sample](./docs/ae/sample_ae.png)
