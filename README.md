@@ -131,7 +131,7 @@ fcnn(
 )
 ```
 
-![sample](./docs/fcnn/sample_fcnn.png)
+![sample](./docs/fcnn/sample_fcnn_en.png)
 
 ### Recurrent Neural Network `#rnn`
 
@@ -171,7 +171,7 @@ rnn(
 )
 ```
 
-![sample](./docs/rnn/sample_rnn.png)
+![sample](./docs/rnn/sample_rnn_en.png)
 
 ### Long Short-Term Memory `#lstm`
 
@@ -211,7 +211,7 @@ lstm(
 )
 ```
 
-![sample](./docs/lstm/sample_lstm.png)
+![sample](./docs/lstm/sample_lstm_en.png)
 
 ### Autoencoder `#ae`
 
@@ -253,4 +253,4 @@ ae(
 )
 ```
 
-![sample](./docs/ae/sample_ae.png)
+![sample](./docs/ae/sample_ae_en.png)

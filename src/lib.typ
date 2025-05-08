@@ -2,3 +2,4 @@
 #import "fcnn.typ": fcnn
 #import "rnn.typ": rnn
 #import "ae.typ": ae
+#import "lstm.typ": lstm
