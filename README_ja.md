@@ -1,26 +1,26 @@
-# Neural Network Drawing Package (CeTZuron)
+# ニューラルネットワーク描画パッケージ (CeTZuron)
 
-[[JA](./README_ja.md)]
+[[EN](./README.md)] 
 
 ## Installation
 
-### 1. Clone the repository
+### 1. `git clone` する
 
 ```bash
 $ git clone https://github.com/rice8y/cetzuron.git
 $ cd cetzuron
 ```
 
-### 2. Install the package locally via `justfile`, `.sh`, or `.bat`
+### 2. `justfile` か `.sh`, `.bat` でローカルにパッケージをインストールする
 
-#### 2-1. Using `justfile`
+#### 2-1. `justfile` の場合
 
 ```bash
 $ just install
 ```
 
 <details>
-<summary>Example on WSL2 (Ubuntu)</summary>
+<summary>WSL2 (Ubuntu) での実行例</summary>
 
 ```bash
 $ just install
@@ -29,7 +29,7 @@ Package cetzuron version 0.1.0 has been installed to /home/rice8/.local/share/ty
 
 </details>
 
-#### 2-2. Using `.sh`
+#### 2-2. `.sh` の場合
 
 ```bash
 $ chmod +x install.sh
@@ -37,7 +37,7 @@ $ ./install.sh
 ```
 
 <details>
-<summary>Example on WSL2 (Ubuntu)</summary>
+<summary>WSL2 (Ubuntu) での実行例</summary>
 
 ```bash
 $ ./install.sh
@@ -46,16 +46,16 @@ Package cetzuron version 0.1.0 has been installed to /home/rice8/.local/share/ty
 
 </details>
 
-#### 2-3. Using `.bat`
+#### 2-3. `.bat` の場合
 
 ```cmd
 > install.bat
 ```
 
 <details>
-<summary>Example on Windows (cmd)</summary>
+<summary>Windows (cmd) での実行例</summary>
 
-```cmd
+```bash
 > install.bat
 C:install.sh
 C:justfile
@@ -80,20 +80,21 @@ C:src\lstm.typ
 C:src\requirements.typ
 C:src\rnn.typ
 23 File(s) copied
-Package cetzuron version 0.1.0 has been installed to C:\Users\yoneyama\AppData\Roaming\typst\packages\local\cetzuron\0.1.0
+Package cetzuron version 0.1.0 has been installed to C:\Users\yoneyama\AppData\Roaming\typst\packages\local\cetzuron\0.1.0 
+
 ```
 
 </details>
 
 ## Usage
 
-Import the package using `#import`.
+`#import` でパッケージを読み込む.
 
 ```typ
 #import "@local/cetzuron:0.1.0"
 ```
 
-### 1. Fully Connected Neural Network `#fcnn`
+### 1. 全結合型ニューラルネットワーク `#fcnn`
 
 #### Parameters
 
@@ -107,13 +108,13 @@ fcnn(
 ) -> content
 ```
 
-**inputNodes:** Number of nodes in the input layer  
-**middleNodes:** Number of nodes in hidden layers  
-**outputNodes:** Number of nodes in the output layer  
-**middleLayers:** Number of hidden layers (default: 3)  
-**label:** Whether to show labels (default: true)
+**inputNodes:** 入力層のノード数  
+**middleNodes:** 隠れ層のノード数  
+**outputNodes:** 出力層のノード数  
+**middleLayers:** 隠れ層の層数 (default: 3)  
+**label:** ラベルの有無 (default: true)
 
-#### Example usage of `#fcnn`
+#### `#fcnn` の使用例
 
 ```typ
 #import "@local/cetzuron:0.1.0": *
@@ -123,15 +124,17 @@ fcnn(
 
 #figure(
   fcnn(3, 4, 3),
-  caption: [With Labels]
+  caption: [ラベル表示 Ver.]
 )
 #figure(
   fcnn(5, 4, 3, middleLayers: 1, label: false),
-  caption: [Without Labels]
+  caption: [ラベル非表示 Ver.]
 )
 ```
 
-### 2. Recurrent Neural Network `#rnn`
+![sample](./docs/fcnn/sample_fcnn.png)
+
+### 2. 再帰型ニューラルネットワーク `#rnn`
 
 #### Parameters
 
@@ -145,13 +148,13 @@ rnn(
 ) -> content
 ```
 
-**inputNodes:** Number of nodes in the input layer  
-**middleNodes:** Number of nodes in hidden layers  
-**outputNodes:** Number of nodes in the output layer  
-**middleLayers:** Number of hidden layers (default: 3)  
-**label:** Whether to show labels (default: true)
+**inputNodes:** 入力層のノード数  
+**middleNodes:** 隠れ層のノード数  
+**outputNodes:** 出力層のノード数  
+**middleLayers:** 隠れ層の層数 (default: 3)  
+**label:** ラベルの有無 (default: true)
 
-#### Example usage of `#rnn`
+#### `#rnn` の使用例
 
 ```typ
 #import "@local/cetzuron:0.1.0": *
@@ -161,15 +164,17 @@ rnn(
 
 #figure(
   rnn(3, 4, 3),
-  caption: [With Labels]
+  caption: [ラベル表示 Ver.]
 )
 #figure(
   rnn(5, 4, 3, middleLayers: 1, label: false),
-  caption: [Without Labels]
+  caption: [ラベル非表示 Ver.]
 )
 ```
 
-### Long Short-Term Memory `#lstm`
+![sample](./docs/rnn/sample_rnn.png)
+
+### 短・長期記憶 `#lstm`
 
 #### Parameters
 
@@ -183,13 +188,13 @@ lstm(
 ) -> content
 ```
 
-**inputNodes:** Number of nodes in the input layer  
-**middleNodes:** Number of nodes in hidden layers  
-**outputNodes:** Number of nodes in the output layer  
-**middleLayers:** Number of hidden layers (default: 3)  
-**label:** Whether to show labels (default: true)
+**inputNodes:** 入力層のノード数  
+**middleNodes:** 隠れ層のノード数  
+**outputNodes:** 出力層のノード数  
+**middleLayers:** 隠れ層の層数 (default: 3)  
+**label:** ラベルの有無 (default: true)
 
-#### Example usage of `#lstm`
+#### `#lstm` の使用例
 
 ```typ
 #import "@local/cetzuron:0.1.0": *
@@ -199,15 +204,17 @@ lstm(
 
 #figure(
   lstm(3, 4, 3),
-  caption: [With Labels]
+  caption: [ラベル表示 Ver.]
 )
 #figure(
   lstm(5, 4, 3, middleLayers: 1, label: false),
-  caption: [Without Labels]
+  caption: [ラベル非表示 Ver.]
 )
 ```
 
-### Autoencoder `#ae`
+![sample](./docs/lstm/sample_lstm.png)
+
+### オートエンコーダ `#ae`
 
 #### Parameters
 
@@ -220,12 +227,12 @@ ae(
 ) -> content
 ```
 
-**inputNodes:** Number of nodes in input/output layers  
-**middleNodes:** Number of nodes in hidden layer  
-**style:** Shape of hidden layer \["short", "full"\] (default: "short")  
-**label:** Whether to show labels (default: true)
+**inputNodes:** 入力層/出力層のノード数  
+**middleNodes:** 隠れ層のノード数  
+**style:** 隠れ層の形状 \["short", "full"\] (default: "short")  
+**label:** ラベルの有無 (default: true)
 
-#### Example usage of `#ae`
+#### `#ae` の使用例
 
 ```typ
 #import "@local/cetzuron:0.1.0": *
@@ -235,14 +242,16 @@ ae(
 
 #figure(
   ae(5, 3),
-  caption: [With Labels (short)]
+  caption: [ラベル表示 Ver. (short)]
 )
 #figure(
   ae(5, 3, style: "full"),
-  caption: [With Labels (full)]
+  caption: [ラベル表示 Ver. (full)]
 )
 #figure(
   ae(4, 2, style: "full", label: false),
-  caption: [Without Labels (full)]
+  caption: [ラベル非表示 Ver. (full)]
 )
 ```
+
+![sample](./docs/ae/sample_ae.png)
